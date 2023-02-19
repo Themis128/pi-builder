@@ -24,7 +24,7 @@
 -include config.mk
 
 PROJECT ?= common
-BOARD ?= rpi4
+BOARD ?= rpi3
 ARCH ?= arm
 UBOOT ?=
 STAGES ?= __init__ os pikvm-repo watchdog no-bluetooth no-audit ro ssh-keygen __cleanup__
@@ -39,7 +39,7 @@ PIKVM_REPO_URL ?= https://files.pikvm.org/repos/arch/
 PIKVM_REPO_KEY ?= 912C773ABBD1B584
 BUILD_OPTS ?=
 
-CARD ?= /dev/mmcblk0
+CARD ?= /dev/mmcblk0p1
 
 QEMU_PREFIX ?= /usr
 QEMU_RM ?= 1
